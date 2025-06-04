@@ -32,7 +32,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; /* Increase padding to increase height */
+    padding: 10px;
+    /* Increase padding to increase height */
     border-bottom: 2px solid #ff69b4;
 }
 
@@ -42,29 +43,32 @@ nav {
 }
 
 .logo img {
-    height: 80px; /* Increase height of logo */
-    width: auto; /* Maintain aspect ratio */
+    height: 80px;
+    /* Increase height of logo */
+    width: auto;
+    /* Maintain aspect ratio */
     margin-right: 10px;
 }
- 
-
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between; /* Add this to distribute the nav items evenly */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Add this to distribute the nav items evenly */
 }
 
 nav ul li {
-  margin: 0 20px; /* Adjust the margin to add some space between the nav items */
+    margin: 0 10px;
+    /* Adjust the margin to add some space between the nav items */
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
-  white-space: nowrap; /* Add this to prevent the text from wrapping */
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+    /* Add this to prevent the text from wrapping */
 }
 
 .dropdown {
@@ -73,8 +77,10 @@ nav a {
 }
 
 .dropbtn {
-    background-color: #f3f3f3; /* Light gray background */
-    color: #333; /* Dark gray text color */
+    background-color: #f3f3f3;
+    /* Light gray background */
+    color: #333;
+    /* Dark gray text color */
     padding: 14px 16px;
     font-size: 16px;
     border: none;
@@ -84,9 +90,10 @@ nav a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9; /* Very light gray background */
+    background-color: #f9f9f9;
+    /* Very light gray background */
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -98,7 +105,8 @@ nav a {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1; /* Light gray on hover */
+    background-color: #f1f1f1;
+    /* Light gray on hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -131,11 +139,16 @@ nav a.active {
 }
 
 .hero img {
-    width: 100vw; /* Full width of viewport */
-    height: 100vh; /* Full height of viewport */
-    object-fit: cover; /* Maintain aspect ratio and cover entire area */
-    margin: 0; /* Remove margins */
+    width: 100vw;
+    /* Full width of viewport */
+    height: 100vh;
+    /* Full height of viewport */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover entire area */
+    margin: 0;
+    /* Remove margins */
 }
+
 .hero h1 {
     font-size: 48px;
     z-index: 1;
@@ -145,16 +158,18 @@ nav a.active {
 
 .why-nit-warangal {
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center; /* Center content vertically */
+    justify-content: flex-start;
+    /* Align content to the left */
+    align-items: center;
+    /* Center content vertically */
     padding: 100px;
 }
 
 .content {
     width: 50%;
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    /* Align text to the left */
 }
-
 
 .content h2 {
     font-size: 36px;
@@ -176,48 +191,57 @@ nav a.active {
 }
 
 .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-left:10%;
-            width: 50%; /* Adjust the width as needed */
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    width: 50%;
+    /* Adjust the width as needed */
+}
 
-        .button {
-    height: 250px; /* Set a fixed height */
+.button {
+    height: 250px;
+    /* Set a fixed height */
     text-align: center;
     border: none;
     cursor: pointer;
     font-size: 40px;
     color: white;
     width: 100%;
-    display: flex; /* Add this to center the text vertically */
-    justify-content: center; /* Add this to center the text horizontally */
-    align-items: center; /* Add this to center the text vertically */
+    display: flex;
+    /* Add this to center the text vertically */
+    justify-content: center;
+    /* Add this to center the text horizontally */
+    align-items: center;
+    /* Add this to center the text vertically */
 }
 
+.drones {
+    background-color: #add8e6;
+    /* Light blue */
+}
 
-        .drones {
-            background-color: #add8e6;/* Light blue */
-        }
+.robotics {
+    background-color: #4682b4;
+    /* Blue */
+}
 
-        .robotics {
-            background-color: #4682b4; /* Blue */
-        }
-
-        .autonomous-vehicles {
-            background-color: #ff0000; /* Red */
-        }
+.autonomous-vehicles {
+    background-color: #ff0000;
+    /* Red */
+}
 
 .area span:first-child {
-    font-size: 28px; /* Increased font size */
+    font-size: 28px;
+    /* Increased font size */
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
 }
 
 .area span:last-child {
-    font-size: 20px; /* Increased font size */
+    font-size: 20px;
+    /* Increased font size */
 }
 
 .stats-and-events {
@@ -248,18 +272,19 @@ nav a.active {
     font-size: 36px;
     font-weight: bold;
 }
+
 .tech-container {
     text-align: center;
     padding: 50px;
     background-color: #fff;
 }
 
-.tech-container  h1 {
+.tech-container h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.tech-container  p {
+.tech-container p {
     font-size: 18px;
     margin-bottom: 30px;
 }
@@ -272,6 +297,7 @@ nav a.active {
     font-size: 18px;
     cursor: pointer;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -312,6 +338,7 @@ nav a.active {
     font-size: 18px;
     cursor: pointer;
 }
+
 .research-updates {
     text-align: center;
     padding: 40px 0;
@@ -336,7 +363,7 @@ nav a.active {
     padding: 0;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -368,10 +395,8 @@ nav a.active {
 }
 
 .research-card:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
-
 
 button {
     background-color: #333;
@@ -386,8 +411,6 @@ button {
 button:hover {
     background-color: #444;
 }
-
-
 
 .event {
     margin-bottom: 20px;
@@ -426,6 +449,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 .all-events {
     padding: 50px;
     text-align: center;
@@ -467,7 +491,6 @@ button {
     cursor: pointer;
 }
 
-
 .container {
     max-width: 800px;
     margin: 40px auto;
@@ -488,12 +511,13 @@ button {
 }
 
 .image-container img {
-    width: 100%; /* change this to a larger value or remove it to make the image full-width */
-    height: 250px; /* increased height to maintain aspect ratio */
+    width: 100%;
+    /* change this to a larger value or remove it to make the image full-width */
+    height: 250px;
+    /* increased height to maintain aspect ratio */
     object-fit: cover;
     border-radius: 10px;
 }
-
 
 .next-slide {
     display: flex;
@@ -523,24 +547,30 @@ button {
 .form-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px; /* Increased margin bottom to add space between form groups */
+    margin-bottom: 30px;
+    /* Increased margin bottom to add space between form groups */
 }
 
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
     width: 48%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 0 10px; /* Added margin to add space between input fields */
+    margin: 0 10px;
+    /* Added margin to add space between input fields */
 }
 
 .form-group input:first-child {
-    margin-left: 0; /* Remove margin from the first input field */
+    margin-left: 0;
+    /* Remove margin from the first input field */
 }
 
 .form-group input:last-child {
-    margin-right: 0; /* Remove margin from the last input field */
+    margin-right: 0;
+    /* Remove margin from the last input field */
 }
+
 button[type="submit"] {
     background-color: #333;
     color: #fff;
@@ -552,70 +582,74 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #444;
 }
+
+
 /* Footer Styles */
+
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .footer {
-  background-color: #0c4c66;
-  color: white;
-  font-family: Arial, sans-serif;
-  width: 100vw; /* Full width of viewport */
+    background-color: #0c4c66;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    /* Full width of viewport */
 }
 
 .footer-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 60px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    flex-wrap: wrap;
 }
 
 .footer-left,
 .footer-center {
-  flex: 1;
-  min-width: 200px;
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-left h3,
 .footer-center h3 {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .footer-left a,
 .footer-center a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .footer-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .footer-right img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
 }
 
 .footer-right img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .footer-bottom {
-  text-align: center;
-  background-color: white;
-  color: #007b9e;
-  padding: 15px 0;
-  font-size: 0.9rem;
+    text-align: center;
+    background-color: white;
+    color: #007b9e;
+    padding: 15px 0;
+    font-size: 0.9rem;
 }
 
 .our-programs {
@@ -656,13 +690,12 @@ button:hover {
     background-color: #444;
 }
 
-
-.academics2{
+.academics2 {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -681,7 +714,7 @@ h1 {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .icon {
@@ -692,12 +725,13 @@ h1 {
 h2 {
     margin-top: 0;
 }
+
 p {
     color: #666
 }
 
 .faculty-container {
-    width:100vw;
+    width: 100vw;
     margin: 40px auto;
     text-align: center;
 }
@@ -716,7 +750,8 @@ p {
 .faculty-member img {
     width: 100%;
     height: auto;
-    border-radius: 0; /* Adjust based on the image style */
+    border-radius: 0;
+    /* Adjust based on the image style */
 }
 
 .faculty-member h3 {
@@ -724,7 +759,8 @@ p {
     margin-bottom: 5px;
 }
 
-.faculty-member p, .faculty-member a {
+.faculty-member p,
+.faculty-member a {
     font-size: 12px;
     color: #666;
     text-decoration: none;
@@ -748,7 +784,7 @@ p {
     margin: auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -790,7 +826,6 @@ h1 {
     color: #23527c;
 }
 
-
 .apply-container {
     width: 100vw;
     margin: 40px auto;
@@ -831,7 +866,8 @@ h1 {
 
 .box {
     width: 33.33%;
-    padding: 40px 20px; /* Increased vertical padding */
+    padding: 40px 20px;
+    /* Increased vertical padding */
     text-align: center;
     color: #fff;
     border: none;
@@ -847,21 +883,21 @@ h1 {
 }
 
 .red-box {
-    background-color: #FFA07A; /* Changed to orange */
+    background-color: #FFA07A;
+    /* Changed to orange */
 }
-
 
 .campus-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section {
@@ -872,7 +908,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .section h2 {
