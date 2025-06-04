@@ -48,15 +48,18 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Add this to prevent wrapping */
 }
 
 nav ul li {
-    margin-left: 20px;
+  margin-left: 20px;
+  white-space: nowrap; /* Add this to prevent text wrapping */
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
