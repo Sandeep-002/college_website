@@ -170,15 +170,15 @@ nav a.active {
             flex-direction: column;
             align-items: center;
             padding-left:10%;
-            width: 90%; /* Adjust the width as needed */
+            width: 50%; /* Adjust the width as needed */
         }
 
         .button {
-    height: 80px; /* Set a fixed height */
+    height: 250px; /* Set a fixed height */
     text-align: center;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 40px;
     color: white;
     width: 100%;
     display: flex; /* Add this to center the text vertically */
