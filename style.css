@@ -30,7 +30,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px; /* Increase padding to increase height */
     border-bottom: 2px solid #ff69b4;
@@ -52,8 +52,9 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap; /* Add this to prevent wrapping */
+  padding-left: 0; /* Remove any padding that might be pushing the nav items to the right */
 }
+
 
 nav ul li {
   margin-left: 20px;
