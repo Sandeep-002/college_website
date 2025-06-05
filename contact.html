@@ -59,150 +59,182 @@
 
 <section class="image-grid-section ">
   <div class="image-grid ">
-    <div class="image-container ">
-      <img src="pg1.png " alt="Image 1 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg2.png " alt="Image 2 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg3.png " alt="Image 3 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg4.png " alt="Image 4 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg5.jpg " alt="Image 5 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg6.jpg " alt="Image 6 " class="image ">
+    <div class="image-container "onclick="openModal(this) ">
+                        <img src="pg1.png " alt="Image 1 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src="pg2.png " alt="Image 2 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src="pg3.png " alt="Image 3 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src=" pg4.png " alt="Image 4 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src=" pg5.jpg " alt="Image 5 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+      <img src=" pg6.jpg " alt="Image 6 " class="image ">
     
     </div>
-    <div class="image-container ">
-      <img src="pg7.jpg " alt="Image 7 " class="image ">
-     
+    <div class="image-container "onclick="openModal(this) ">
+                        <img src="pg7.jpg " alt="Image 7 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src=" pg8.jpg " alt="Image 8 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src=" pg9.jpg " alt="Image 9 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+      <img src=" pg10.jpg " alt="Image 10 " class="image ">
+   
     </div>
-    <div class="image-container ">
-      <img src="pg8.jpg " alt="Image 8 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg9.jpg " alt="Image 9 " class="image ">
-      
-    </div>
-    <div class="image-container ">
-      <img src="pg10.jpg " alt="Image 10 " class="image ">
-     
-    </div>
-    <div class="image-container ">
-      <img src="pg11.jpg " alt="Image 11 " class="image ">
-     
-    </div>
-    <div class="image-container ">
-      <img src="pg12.jpeg " alt="Image 12 " class="image ">
-     
-    </div>
-    <div class="image-container ">
-      <img src="pg13.jpeg " alt="Image 13 " class="image ">
-    </div>
-  </div>
- 
-</section>
+    <div class="image-container "onclick="openModal(this) ">
+                            <img src="pg11.jpg " alt="Image 11 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src=" pg12.jpeg " alt="Image 12 " class="image ">
+
+                        </div>
+                        <div class="image-container " onclick="openModal(this) ">
+                            <img src="pg13.jpeg " alt="Image 13 " class="image ">
+                        </div>
+                        </div>
+
+                        </section>
 
 
-<style>
+                        <style>
+                            .image-grid {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                gap: 10px;
+                            }
+                            
+                            .image-container {
+                                position: relative;
+                                cursor: pointer;
+                                transition: transform 0.2s ease-in-out;
+                            }
+                            
+                            .image-container:hover {
+                                transform: scale(1.1);
+                                z-index: 1;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                            }
+                            
+                            .image-container:hover .overlay {
+                                opacity: 1;
+                            }
+                            
+                            .image {
+                                width: 80%;
+                                height: 150px;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            }
+                            
+                            .image-modal {
+                                display: none;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.8);
+                                z-index: 1;
+                                text-align: center;
+                            }
+                            
+                            .modal-image {
+                                max-width: 90%;
+                                max-height: 90%;
+                                margin: auto;
+                                display: inline-block;
+                                vertical-align: middle;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            
+                            .overlay {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                color: #fff;
+                                padding: 10px;
+                                border-bottom: 0;
+                            }
 
+                                .image-modal {
+                                display: none;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.8);
+                                z-index: 1;
+                                text-align: center;
+                                }
 
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
+                                    .modal-image {
+                                    max-width: 90%;
+                                    max-height: 90%;
+                                    margin: auto;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    }
 
-  .image-container {
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
+                                    .close-modal {
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 8%;
+                                    font-size: 36px;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    }
 
-  .image-container:hover {
-    transform: scale(1.1);
-    z-index: 1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+                        </style>
 
-  .image-container:hover .overlay {
-    opacity: 1;
-  }
-
-  .image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-    .image-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  text-align: center;
-}
-
-.modal-image {
-  max-width: 90%;
-  max-height: 90%;
-  margin: auto;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    border-bottom: 0;
-  }
-  </style>
-
-    <div class="next-slide ">
-        <div class="logo-section ">
-            <img src="nitw-logo.png " alt="Logo " class="logo ">
-            <h2>National Institute of Technology Warangal</h2>
-            <p>Hanamkonda, Telangana, 506004.</p>
-            <p>Phone: <span id="phone-number "></span></p>
-        </div>
-        <div class="get-in-touch ">
-            <h2>Get in Touch</h2>
-            <form id="contact-form ">
-                <div class="form-group ">
-                    <input type="text " id="first-name " placeholder="First name * " required>
-                    <input type="text " id="last-name " placeholder="Last name * " required>
-                </div>
-                <div class="form-group ">
-                    <input type="email " id="email " placeholder="Email * " required>
-                    <input type="tel " id="phone " placeholder="Phone ">
-                </div>
-                <div class="form-group ">
-                    <select id="country-code ">
+                        <div class="next-slide ">
+                            <div class="logo-section ">
+                                <img src="nitw-logo.png " alt="Logo " class="logo ">
+                                <h2>National Institute of Technology Warangal</h2>
+                                <p>Hanamkonda, Telangana, 506004.</p>
+                                <p>Phone: <span id="phone-number "></span></p>
+                            </div>
+                            <div class="get-in-touch ">
+                                <h2>Get in Touch</h2>
+                                <form id="contact-form ">
+                                    <div class="form-group ">
+                                        <input type="text " id="first-name " placeholder="First name * " required>
+                                        <input type="text " id="last-name " placeholder="Last name * " required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="email " id="email " placeholder="Email * " required>
+                                        <input type="tel " id="phone " placeholder="Phone ">
+                                    </div>
+                                    <div class="form-group ">
+                                        <select id="country-code ">
                         <option value="+93 ">Afghanistan (+93)</option>
                                 <option value="+355 ">Albania (+355)</option>
                                 <option value="+213 ">Algeria (+213)</option>
@@ -384,80 +416,62 @@
 
                         <!-- Add more country codes as needed -->
                     </select>
-                    <input type="text " id="first-name " placeholder="Comment box " required>
-                </div>
-                <button type="submit ">Submit</button>
-            </form>
-        </div>
-    </div>
-    <!-- Footer Section -->
+                                        <input type="text " id="first-name " placeholder="Comment box " required>
+                                    </div>
+                                    <button type="submit ">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Footer Section -->
 
-  <footer class="footer ">
-    <div class="footer-main ">
-      <div class="footer-left ">
-        <h3>Registration Office</h3>
-        <p><a href="# ">nitw.ac.in</a></p>
-        <p>Tel:</p>
-      </div>
-      <div class="footer-center ">
-        <h3>Admissions Office</h3>
-        <p><a href="# ">nitw.ac.in</a></p>
-        <p>Tel:</p>
-      </div>
-      <div class="footer-right ">
-        <a href="# "><img src="instagram.png " alt="Instagram "></a>
-        <a href="# "><img src="facebook.png " alt="Facebook "></a>
-        <a href="# "><img src="twitter.png " alt="Twitter "></a>
-        <a href="# "><img src="linkedin.png " alt="LinkedIn "></a>
-        <a href="# "><img src="youtube.png " alt="YouTube "></a>
-        <a href="# "><img src="tiktok.png " alt="TikTok "></a>
-      </div>
-    </div>
-    <div class="footer-bottom ">
-      <p>&copy; 2025 by NIT WARANGAL.</p>
-    </div>
-  </footer>
+                        <footer class="footer ">
+                            <div class="footer-main ">
+                                <div class="footer-left ">
+                                    <h3>Registration Office</h3>
+                                    <p><a href="# ">nitw.ac.in</a></p>
+                                    <p>Tel:</p>
+                                </div>
+                                <div class="footer-center ">
+                                    <h3>Admissions Office</h3>
+                                    <p><a href="# ">nitw.ac.in</a></p>
+                                    <p>Tel:</p>
+                                </div>
+                                <div class="footer-right ">
+                                    <a href="# "><img src="instagram.png " alt="Instagram "></a>
+                                    <a href="# "><img src="facebook.png " alt="Facebook "></a>
+                                    <a href="# "><img src="twitter.png " alt="Twitter "></a>
+                                    <a href="# "><img src="linkedin.png " alt="LinkedIn "></a>
+                                    <a href="# "><img src="youtube.png " alt="YouTube "></a>
+                                    <a href="# "><img src="tiktok.png " alt="TikTok "></a>
+                                </div>
+                            </div>
+                            <div class="footer-bottom ">
+                                <p>&copy; 2025 by NIT WARANGAL.</p>
+                            </div>
+                        </footer>
 
-<div class="image-modal ">
-    <span class="close-modal ">&times;</span>
-    <img class="modal-image " src=" " alt="Modal Image ">
-  </div>
-  <script>
-document.addEventListener("DOMContentLoaded ", function() {
-  var imageContainers = document.getElementsByClassName("image-container ");
-  var modal = document.getElementsByClassName("image-modal ")[0];
-  var modalImage = document.getElementsByClassName("modal-image ")[0];
-  var closeButton = document.getElementsByClassName("close-modal ")[0];
-
-  console.log("JavaScript code is running ");
-
-  for (var i = 0; i < imageContainers.length; i++) {
-    imageContainers[i].addEventListener("click ", function(event) {
-      console.log("Image container clicked ");
-      var imageSrc = event.target.src || event.target.parentNode.querySelector("img ").src;
-      modal.style.display = "block ";
-      console.log("Modal display property set to block ");
-      modalImage.src = imageSrc;
-    });
-      }
-
-  closeButton.addEventListener("click ", function() {
-    modal.style.display = "none ";
-  });
-
-  window.addEventListener("click ", function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none ";
-    }
-  });
-});
+                        <script>
+                            function openModal(container) {
+                                var modal = document.getElementsByClassName("image-modal ")[0];
+                                var modalImage = document.getElementsByClassName("modal-image ")[0];
+                                var imageSrc = container.querySelector("img ").src;
+                                modal.style.display = "block ";
+                                modalImage.src = imageSrc;
+                            }
+                          function closeModal() {
+  var modal = document.querySelector(".image-modal ");
+  modal.style.display = "none ";
+}
 
 
+                        </script>
 
-</script>
-<div class="image-modal ">
-    <span class="close-modal ">&times;</span>
-    <img class="modal-image " src=" " alt="Modal Image ">
-  </div>
+                        <div class="image-modal ">
+  <span class="close-modal " onclick="closeModal() ">&times;</span>
+  <img class="modal-image " src=" " alt="Modal Image ">
+</div>
+
+
 </body>
+
 </html>
