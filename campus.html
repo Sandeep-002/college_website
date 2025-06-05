@@ -31,53 +31,203 @@
     <section class="hero">
         <img src="campus.png" alt="Student services">
     </section>
-    <div class="campus-container">
-        <div class="section">
-            <h2>Career Center</h2>
-            <p>This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.</p>
-            <img src="career-center.png" alt="Career Center">
-        </div>
-        <div class="section">
-            <h2>College Life Office</h2>
-            <p>This item is connected to a text field in your database. Double click the dataset icon to add your own content. To manage all your collections, click the Data icon on the add panel to your left. In the Data Manager you can update your items,
-                add new fields, create dynamic pages and more.</p>
-            <img src="college-life-office.png" alt="College Life Office">
-        </div>
-        <div class="section">
-            <h2>Cultural Events</h2>
-            <p>This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.</p>
-            <img src="cultural-events.png" alt="Cultural Events">
-        </div>
-        <div class="section">
-            <h2>Student Rights</h2>
-            <p>This item is connected to a text field in your database. Double click the dataset icon to add your own content. Want to view and manage all your collections? Click the Data icon on the add panel to your left. In the Data Manager you can update
-                your items, add new fields, create dynamic pages and more.</p>
-            <img src="student-rights.png" alt="Cultural Events">
-        </div>
-        <div class="section">
-            <h2>Disability Support</h2>
-            <p>This item is connected to a text field in your database. Double click the dataset icon to add your own content. To manage all your collections, click the Data icon on the add panel to your left. In the Data Manager you can update your items,
-                add new fields, create dynamic pages and more.</p>
-            <img src="disability-support.png" alt="Cultural Events">
-        </div>
-        <div class="section">
-            <h2>Health Services</h2>
-            <p>This item is connected to a text field in your database. Double click the dataset icon to add your own content. Want to view and manage all your collections? Click the Data icon on the add panel to your left. In the Data Manager you can update
-                your items, add new fields, create dynamic pages and more.</p>
-            <img src="health-services.png" alt="Cultural Events">
-        </div>
-        <div class="section">
-            <h2>Psychological Services</h2>
-            <p>This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.</p>
-            <img src="psychological-services.png" alt="Cultural Events">
-        </div>
-        <div class="section">
-            <h2>Wellness Center</h2>
-            <p>This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.</p>
-            <img src="wellness-center.png" alt="Cultural Events">
-        </div>
 
-    </div>
+    <style>
+        .text-section {
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1;
+            color: #333;
+        }
+        
+        .text-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00698f;
+            /*  text-transform: uppercase;*/
+            letter-spacing: 2px;
+        }
+        
+        .text-section h3 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0086b3;
+            margin-top: 20px;
+        }
+        
+        .text-section p {
+            margin-bottom: 2px;
+            text-align: justify;
+        }
+    </style>
+
+    <section class="text-section">
+
+        <h2 style="text-align: center;">MoUs</h2>
+
+        <p>As part of our commitment to fostering cutting-edge research and innovation, the Centre of Excellence on Drones and Autonomous Vehicles at NIT Warangal has signed significant Memoranda of Understanding (MoUs) with two leading technology firms:</p>
+        <h3>HC Robotics Private Limited, Hyderabad</h3>
+        <p>This MoU establishes a collaborative framework for research and development in the areas of intelligent drone systems and autonomous surveillance technologies. The partnership will facilitate joint R&amp;D projects, hands-on training for students
+            and faculty, and infrastructure support through workshops and equipment.</p>
+        <h3>Notable Initiatives</h3>
+        <p>Notable initiatives include the development of drone-based surveillance systems for law enforcement and automated mineral identification solutions for the Ministry of Mines.</p>
+        <h3>PHN Technology Pvt. Ltd., Pune</h3>
+        <p>Under this MoU, PHN Technology will set up a dedicated Robotics Training and Research Centre at NIT Warangal. This initiative, fully funded by PHN Technology, aims to advance robotics education and innovation, offering state-of-the-art training
+            programs and collaborative research opportunities.</p>
+        <p>These partnerships mark a major step in enhancing interdisciplinary research, skill development, and industry-academia collaboration in the fields of drones, robotics, and autonomous systems.</p>
+    </section>
+    <section class="documents-section">
+        <h3 class="section-title">Related Documents</h3>
+        <ul class="document-list">
+            <li><a href="Document1.pdf" class="document-link">Document 1</a></li>
+            <li><a href="document2.pdf" class="document-link">Document 2</a></li>
+            <li><a href="document3.pdf" class="document-link">Document 3</a></li>
+        </ul>
+    </section>
+    <style>
+        .documents-section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .document-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .document-link {
+            text-decoration: none;
+            color: #337ab7;
+            transition: color 0.2s ease;
+        }
+        
+        .document-link:hover {
+            color: #23527c;
+        }
+        
+        .document-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .document-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+
+    <section>
+        <!-- your content here -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="MoUs1.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="MoUs2.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="MoUs3.jpg" alt="Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="MoUs4.jpeg" alt="Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="MoUs5.jpeg" alt="Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="MoUs6.jpeg" alt="Image 3">
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- CSS code -->
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .slide {
+            display: none;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .fade {
+            animation: fade 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0.4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+    <!-- JavaScript code -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
     <div class="next-slide">
         <div class="logo-section">
             <img src="nitw-logo.png" alt="Logo" class="logo">
