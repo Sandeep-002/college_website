@@ -27,8 +27,8 @@
             </ul>
         </nav>
     </header>
-     <marquee behavior="scroll" direction="left" scrollamount="10"scrolldelay="100">Welcome to Centre of Excellence on Drones, Robotics and Autonomous Vehicles</marquee>
     <main>
+        <marquee behavior="scroll" direction="left" scrollamount="10"scrolldelay="100">Welcome to Centre of Excellence on Drones, Robotics and Autonomous Vehicles</marquee>
         <section class="hero">
             <img src="combined-hands.png" alt="Combined Human and Robot Hands">
         </section>
@@ -39,10 +39,12 @@
         <button>READ MORE</button>
     </div>
     <div class="button-container">
-        <button class="button drones">01. EVENTS</button>
-        <button class="button robotics">02. FACILITIES/EQUIPMENT</button>
-        <button class="button autonomous-vehicles">03. INDUSTRY CONNECT</button>
-    </div>
+  <button class="button drones" onclick="window.location.href='events.html'">01. EVENTS</button>
+  <button class="button robotics" onclick="window.location.href='facility.html'">02. FACILITIES/
+    EQUIPMENT</button>
+  <button class="button autonomous-vehicles" onclick="window.location.href='industryconnect.html'">03. INDUSTRY CONNECT</button>
+</div>
+
 </section>
 <section class="stats-and-events">
     <div class="stats">
@@ -101,24 +103,38 @@
     </div>
     <button>Read our insights</button>
 </div>
-
-<section class="container">
-        <div class="image-grid">
-            <div class="image-container">
+<h2> Campus Gallery</h2>
+<section>
+        <!-- your content here -->
+        <div class="slideshow-container">
+            <div class="slide fade">
                 <img src="image1.png" alt="Image 1">
             </div>
-            <div class="image-container">
+            <div class="slide fade">
                 <img src="image2.png" alt="Image 2">
             </div>
-            <div class="image-container">
+            <div class="slide fade">
                 <img src="image3.png" alt="Image 3">
             </div>
-            <div class="image-container">
+            <div class="slide fade">
                 <img src="image4.png" alt="Image 4">
             </div>
+            <div class="slide fade">
+                <img src="pg1.png" alt="Image 5">
+            </div>
+            <div class="slide fade">
+                <img src="pg2.png" alt="Image 6">
+            </div>
+            <div class="slide fade">
+                <img src="pg3.png" alt="Image 6">
+            </div>
+            <div class="slide fade">
+                <img src="pg4.png" alt="Image 6">
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
     </section>
-</section>
     <div class="next-slide">
         <div class="logo-section">
             <img src="nitw-logo.png" alt="Logo" class="logo">
@@ -360,5 +376,78 @@
 
 
     </main>
+            <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .slide {
+            display: none;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .fade {
+            animation: fade 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0.4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
 </body>
 </html>
